@@ -23,7 +23,7 @@ services:
         - ./.docker/phpmyadmin/php.ini:/usr/local/etc/php/php.ini
   myapp:
     tty: true
-    build: '.docker/apache2'
+    build: 'docker/apache2'
     depends_on:
       - mariadb
     ports:
